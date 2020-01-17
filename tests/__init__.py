@@ -10,6 +10,11 @@ class TestCarProvider(unittest.TestCase):
         Faker.seed(0)
         self.fake.add_provider(CarProvider)
 
+    def test_car2(self):
+        print()
+        print(self.fake.car())
+        print(self.fake.car_model())
+
     def test_car(self):
         assert self.fake.car()
         assert self.fake.car_model()
